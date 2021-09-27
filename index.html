@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atro</title>
+</head>
+
+<body>
+    <div id="div-main">
+        <img src="./img/ui-logo.png" />
+        <input type="email" />
+        <input id="input-password" type="password" />
+        <button id="button-sign">Sign in</button>
+        <button id="button-facebook">Continue with facebook</button>
+        <div id="div-links">
+        <a>Forgot Details?</a>
+        <a>Create Account?</a>
+        </div>
+    </div>
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #div-main {
+        height: 100vh;
+        width: 100vw;
+        background: url("./img/img-background.svg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 50%;
+        margin-top: 160px;
+    }
+
+    input {
+        height: 50px;
+        width: 80%;
+        border-radius: 15px;
+        border: none;
+        background-color: #140f26;
+        opacity: 0.8;
+        margin-top: 150px;
+        color: white;
+        font-size: 17px;
+        outline: none;
+        padding-left: 10px;
+    }
+
+    #input-password {
+        margin-top: 20px;
+    }
+
+    #button-sign {
+        width: 80%;
+        margin-top: 20px;
+        height: 50px;
+        font-size: 15px;
+        font-weight: bolder;
+        border: none;
+        border-radius: 30px;
+        background: #645aff;
+        color: white;
+        text-transform: uppercase;
+        background-image: linear-gradient(#645aff 50%, rgba(0, 132, 255, 0.938));
+    }
+    #button-sign:active{
+        box-shadow: 0 3px black;
+        transform: translateY(4px);
+    }
+    #button-facebook{
+        width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    background: black;
+    opacity: 0.4;
+    text-transform: uppercase;
+    }
+    #button-facebook:active{
+        background: white;
+        color: black;
+        opacity: 0.8;
+    }
+    #div-links{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        flex-direction: row;
+        margin-top: 80px;
+        color: white;
+    }
+</style>
+
+</html>
